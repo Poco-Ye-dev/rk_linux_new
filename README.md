@@ -25,3 +25,9 @@ kernel代码补丁：
 不一致就替换
 
 ```
+2、使用bluetoothctl工具
+```
+针对rkwfibt_app 我们对bluez5做了定制化，与bluetoothctl冲突。
+如果这边用传统bluetoothctl工具连接，需要去掉我们buildroot自带的bluez补丁
+还要加上buildroot蓝牙电话验证.7z的补丁才能正常使用
+```
